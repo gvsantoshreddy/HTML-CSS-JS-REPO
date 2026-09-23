@@ -1,178 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Technology Practical Programs</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
-header{background:#172554;color:#fff;padding:42px 20px;text-align:center}
-header h1{margin:0 0 10px}
-.container{max-width:1200px;margin:auto;padding:25px 18px}
-.notice{background:#fff7ed;border-left:5px solid #f97316;padding:15px;border-radius:8px;margin-bottom:25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card,.viewer{background:#fff;padding:22px;border-radius:14px;box-shadow:0 5px 18px #0001}
-.card h2{margin-top:0}
-.btn{display:inline-block;border:0;padding:10px 14px;margin:5px 5px 0 0;border-radius:7px;background:#2563eb;color:#fff;text-decoration:none;cursor:pointer}
-.btn.green{background:#15803d}
-select{width:100%;padding:12px;font-size:15px;margin:8px 0 15px}
-pre{background:#0f172a;color:#e2e8f0;padding:18px;border-radius:10px;overflow:auto;max-height:600px;white-space:pre-wrap}
-.viewer{margin-top:25px}
-.list{columns:2;column-gap:35px}
-.list a{display:block;padding:7px 0;color:#1d4ed8;text-decoration:none}
-.list a:hover{text-decoration:underline}
-footer{text-align:center;padding:30px;color:#64748b}
-code{background:#e2e8f0;padding:2px 5px;border-radius:4px}
-@media(max-width:700px){.list{columns:1}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology Practical Programs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .notice {
+            background: white;
+            padding: 18px;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #172554;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 16px;
+            margin-top: 10px;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .green {
+            background: #15803d;
+        }
+
+        .green:hover {
+            background: #166534;
+        }
+
+        .orange {
+            background: #ea580c;
+        }
+
+        .orange:hover {
+            background: #c2410c;
+        }
+
+        .section {
+            background: white;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            color: #172554;
+        }
+
+        .program-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 10px;
+        }
+
+        .program-list a {
+            display: block;
+            padding: 10px;
+            background: #f1f5f9;
+            color: #1d4ed8;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .program-list a:hover {
+            background: #dbeafe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .container {
+                padding: 20px 12px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
 <header>
-<h1>HTML, CSS &amp; JavaScript Practical Programs</h1>
-<p>Web Technology Practical Programs Collection</p>
+    <h1>HTML, CSS &amp; JavaScript Practical Programs</h1>
+    <p>Web Technology Practical Programs Collection</p>
 </header>
+
 <div class="container">
 
-<div class="notice">
-<strong>Folder order:</strong>
-HTML → CSS → JS → index.html → README
+    <div class="notice">
+        <strong>Practical Assignment:</strong>
+        HTML, CSS and JavaScript Programs
+    </div>
+
+
+    <!-- MAIN FOLDERS -->
+    <div class="grid">
+
+        <!-- HTML -->
+        <div class="card">
+            <h2>1. HTML Programs</h2>
+
+            <p>
+                Contains HTML practical programs from HTML 01 to HTML 15.
+            </p>
+
+            <a class="btn" href="HTML/index.html">
+                Open HTML Programs
+            </a>
+        </div>
+
+
+        <!-- CSS -->
+        <div class="card">
+            <h2>2. CSS Programs</h2>
+
+            <p>
+                Contains 270 separate CSS practical programs.
+            </p>
+
+            <a class="btn green" href="CSS/001.css">
+                Open CSS Programs
+            </a>
+        </div>
+
+
+        <!-- JAVASCRIPT -->
+        <div class="card">
+            <h2>3. JavaScript Programs</h2>
+
+            <p>
+                Contains JavaScript programming and advanced JavaScript
+                practical programs.
+            </p>
+
+            <a class="btn orange" href="#javascript">
+                View JavaScript Programs
+            </a>
+        </div>
+
+
+        <!-- DOM -->
+        <div class="card">
+            <h2>4. DOM Programs</h2>
+
+            <p>
+                Contains DOM manipulation and event-based JavaScript
+                programs.
+            </p>
+
+            <a class="btn" href="#dom">
+                View DOM Programs
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- HTML PROGRAMS -->
+    <div class="section">
+
+        <h2>HTML Programs</h2>
+
+        <div class="program-list">
+
+            <a href="HTML/html-01.html">HTML 01 - Basic Webpage</a>
+            <a href="HTML/html-02.html">HTML 02 - Lists</a>
+            <a href="HTML/html-03.html">HTML 03 - Tables</a>
+            <a href="HTML/html-04.html">HTML 04 - Images and Hyperlinks</a>
+            <a href="HTML/html-05.html">HTML 05 - Student Registration Form</a>
+            <a href="HTML/html-06.html">HTML 06 - Audio and Video</a>
+            <a href="HTML/html-07.html">HTML 07 - Frames and Iframes</a>
+            <a href="HTML/html-08.html">HTML 08 - Semantic Elements</a>
+            <a href="HTML/html-09.html">HTML 09 - HTML5 Input Types</a>
+            <a href="HTML/html-10.html">HTML 10 - College Timetable</a>
+            <a href="HTML/html-11.html">HTML 11 - Internal and External CSS</a>
+            <a href="HTML/html-12.html">HTML 12 - CSS Selectors</a>
+            <a href="HTML/html-13.html">HTML 13 - Responsive Page</a>
+            <a href="HTML/html-14.html">HTML 14 - Bootstrap Components</a>
+            <a href="HTML/html-15.html">HTML 15 - Personal Portfolio</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT PROGRAMS -->
+    <div class="section" id="javascript">
+
+        <h2>JavaScript Programs</h2>
+
+        <div class="program-list">
+
+            <a href="JS/01_hello_world.js">01 - Hello World</a>
+            <a href="JS/02_arithmetic_operations.js">02 - Arithmetic Operations</a>
+            <a href="JS/03_largest_of_three.js">03 - Largest of Three</a>
+            <a href="JS/04_even_or_odd.js">04 - Even or Odd</a>
+            <a href="JS/05_positive_negative_zero.js">05 - Positive Negative Zero</a>
+            <a href="JS/06_factorial.js">06 - Factorial</a>
+            <a href="JS/07_fibonacci.js">07 - Fibonacci</a>
+            <a href="JS/08_prime_check.js">08 - Prime Check</a>
+            <a href="JS/09_palindrome_number.js">09 - Palindrome Number</a>
+            <a href="JS/10_reverse_number.js">10 - Reverse Number</a>
+            <a href="JS/11_sum_of_digits.js">11 - Sum of Digits</a>
+            <a href="JS/12_largest_smallest_array.js">12 - Largest and Smallest Array</a>
+            <a href="JS/13_sort_array.js">13 - Sort Array</a>
+            <a href="JS/14_sum_average_array.js">14 - Sum and Average Array</a>
+            <a href="JS/15_functions.js">15 - Functions</a>
+            <a href="JS/16_arrow_functions.js">16 - Arrow Functions</a>
+            <a href="JS/17_strings_methods.js">17 - String Methods</a>
+            <a href="JS/18_arrays_methods.js">18 - Array Methods</a>
+            <a href="JS/19_objects.js">19 - Objects</a>
+            <a href="JS/20_date_math_objects.js">20 - Date and Math Objects</a>
+
+            <a href="JS/31_validate_name_email_phone_password.js">
+                31 - Validate Name, Email, Phone and Password
+            </a>
+
+            <a href="JS/38_es6_features.js">38 - ES6 Features</a>
+            <a href="JS/39_spread_rest.js">39 - Spread and Rest</a>
+            <a href="JS/40_classes_objects.js">40 - Classes and Objects</a>
+            <a href="JS/41_inheritance.js">41 - Inheritance</a>
+            <a href="JS/42_callbacks_promises_async.js">
+                42 - Callbacks, Promises and Async/Await
+            </a>
+            <a href="JS/43_fetch_api.js">43 - Fetch API</a>
+            <a href="JS/45_local_storage.js">45 - Local Storage</a>
+            <a href="JS/48_swap_two_numbers.js">48 - Swap Two Numbers</a>
+            <a href="JS/49_gcd.js">49 - GCD</a>
+            <a href="JS/50_lcm.js">50 - LCM</a>
+            <a href="JS/51_armstrong_number.js">51 - Armstrong Number</a>
+            <a href="JS/52_perfect_number.js">52 - Perfect Number</a>
+            <a href="JS/53_multiplication_table.js">53 - Multiplication Table</a>
+            <a href="JS/54_power.js">54 - Power</a>
+            <a href="JS/55_count_digits.js">55 - Count Digits</a>
+            <a href="JS/56_second_largest_array.js">56 - Second Largest</a>
+            <a href="JS/57_remove_duplicates.js">57 - Remove Duplicates</a>
+            <a href="JS/58_merge_arrays.js">58 - Merge Arrays</a>
+            <a href="JS/59_frequency_array.js">59 - Frequency of Array Elements</a>
+            <a href="JS/60_common_elements.js">60 - Common Elements</a>
+            <a href="JS/61_reverse_string.js">61 - Reverse String</a>
+            <a href="JS/62_string_palindrome.js">62 - String Palindrome</a>
+            <a href="JS/63_vowels_consonants.js">63 - Vowels and Consonants</a>
+            <a href="JS/64_count_words.js">64 - Count Words</a>
+            <a href="JS/65_character_frequency.js">65 - Character Frequency</a>
+            <a href="JS/66_regular_expressions.js">66 - Regular Expressions</a>
+            <a href="JS/67_validate_email_regex.js">
+                67 - Email Validation using Regular Expression
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DOM PROGRAMS -->
+    <div class="section" id="dom">
+
+        <h2>DOM &amp; Event-Based Programs</h2>
+
+        <div class="program-list">
+
+            <a href="JS/01_add_elements.html">01 - Add Elements</a>
+            <a href="JS/02_remove_elements.html">02 - Remove Elements</a>
+            <a href="JS/03_change_css_styles.html">03 - Change CSS Styles</a>
+            <a href="JS/04_change_multiple_elements.html">
+                04 - Change Multiple Elements
+            </a>
+
+            <a href="JS/05_getElementById_getElementsByClassName.html">
+                05 - getElementById and getElementsByClassName
+            </a>
+
+            <a href="JS/06_querySelector_querySelectorAll.html">
+                06 - querySelector and querySelectorAll
+            </a>
+
+            <a href="JS/07_dynamic_css_classes.html">
+                07 - Dynamic CSS Classes
+            </a>
+
+            <a href="JS/08_dynamic_table.html">
+                08 - Dynamic Table
+            </a>
+
+            <a href="JS/09_add_delete_table_rows.html">
+                09 - Add and Delete Table Rows
+            </a>
+
+            <a href="JS/10_search_filter_table.html">
+                10 - Search / Filter Table
+            </a>
+
+            <a href="JS/11_live_character_counter.html">
+                11 - Live Character Counter
+            </a>
+
+            <a href="JS/12_password_show_hide.html">
+                12 - Password Show / Hide
+            </a>
+
+            <a href="JS/13_dynamic_dropdown.html">
+                13 - Dynamic Dropdown
+            </a>
+
+            <a href="JS/14_country_state_city_dropdown.html">
+                14 - Country, State and City Dropdown
+            </a>
+
+            <a href="JS/15_image_slideshow.html">
+                15 - Image Slideshow
+            </a>
+
+            <a href="JS/22_change_text.html">
+                22 - Change Text
+            </a>
+
+            <a href="JS/23_background_color.html">
+                23 - Change Background Color
+            </a>
+
+            <a href="JS/24_button_click.html">
+                24 - Button Click
+            </a>
+
+            <a href="JS/25_show_hide.html">
+                25 - Show / Hide Element
+            </a>
+
+            <a href="JS/26_change_image.html">
+                26 - Change Image
+            </a>
+
+            <a href="JS/27_digital_clock.html">
+                27 - Digital Clock
+            </a>
+
+            <a href="JS/28_simple_calculator.html">
+                28 - Simple Calculator
+            </a>
+
+            <a href="JS/29_number_guessing_game.html">
+                29 - Number Guessing Game
+            </a>
+
+            <a href="JS/30_form_validation.html">
+                30 - Form Validation
+            </a>
+
+            <a href="JS/32_todo_list.html">
+                32 - To-Do List
+            </a>
+
+            <a href="JS/33_quiz_application.html">
+                33 - Quiz Application
+            </a>
+
+            <a href="JS/34_counter.html">
+                34 - Counter
+            </a>
+
+            <a href="JS/35_stopwatch.html">
+                35 - Stopwatch
+            </a>
+
+            <a href="JS/36_countdown_timer.html">
+                36 - Countdown Timer
+            </a>
+
+            <a href="JS/44_display_api_data.html">
+                44 - Display API Data
+            </a>
+
+            <a href="JS/46_responsive_login_form.html">
+                46 - Responsive Login Form
+            </a>
+
+            <a href="JS/47_interactive_webpage.html">
+                47 - Complete Interactive Webpage
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div class="grid">
-<div class="card"><h2>1. HTML Programs</h2><p>Open your HTML programs.</p>
-<a class="btn" href="HTML/">Open HTML Folder</a></div>
 
-<div class="card"><h2>2. CSS Programs</h2><p>270 CSS practical programs.</p>
-<a class="btn" href="CSS/">Open CSS Folder</a></div>
+<footer>
+    <p>Web Technology Practical Assignment</p>
+    <p>HTML &bull; CSS &bull; JavaScript &bull; DOM</p>
+</footer>
 
-<div class="card"><h2>3. JavaScript Programs</h2><p>65 JavaScript programs.</p>
-<a class="btn green" href="#javascript">View JavaScript Code</a>
-<a class="btn" href="JS/">Open JS Folder</a></div>
-
-<div class="card"><h2>4. DOM Manipulation</h2><p>15 DOM programs.</p>
-<a class="btn green" href="#dom">View DOM Code</a>
-<a class="btn" href="JS/">Open DOM Folder</a></div>
-</div>
-
-<div class="viewer" id="javascript">
-<h2>JavaScript Programs — 65</h2>
-<select id="jsSelect" onchange="showCode('js')">
-<option value="">Select a JavaScript program</option>
-<option value="01_hello_world.js">01_hello_world.js</option>
-<option value="02_arithmetic_operations.js">02_arithmetic_operations.js</option>
-<option value="03_largest_of_three.js">03_largest_of_three.js</option>
-<option value="04_even_or_odd.js">04_even_or_odd.js</option>
-<option value="05_positive_negative_zero.js">05_positive_negative_zero.js</option>
-<option value="06_factorial.js">06_factorial.js</option>
-<option value="07_fibonacci.js">07_fibonacci.js</option>
-<option value="08_prime_check.js">08_prime_check.js</option>
-<option value="09_palindrome_number.js">09_palindrome_number.js</option>
-<option value="10_reverse_number.js">10_reverse_number.js</option>
-<option value="11_sum_of_digits.js">11_sum_of_digits.js</option>
-<option value="12_largest_smallest_array.js">12_largest_smallest_array.js</option>
-<option value="13_sort_array.js">13_sort_array.js</option>
-<option value="14_sum_average_array.js">14_sum_average_array.js</option>
-<option value="15_functions.js">15_functions.js</option>
-<option value="16_arrow_functions.js">16_arrow_functions.js</option>
-<option value="17_strings_methods.js">17_strings_methods.js</option>
-<option value="18_arrays_methods.js">18_arrays_methods.js</option>
-<option value="19_objects.js">19_objects.js</option>
-<option value="20_date_math_objects.js">20_date_math_objects.js</option>
-<option value="22_change_text.html">22_change_text.html</option>
-<option value="23_background_color.html">23_background_color.html</option>
-<option value="24_button_click.html">24_button_click.html</option>
-<option value="25_show_hide.html">25_show_hide.html</option>
-<option value="26_change_image.html">26_change_image.html</option>
-<option value="27_digital_clock.html">27_digital_clock.html</option>
-<option value="28_simple_calculator.html">28_simple_calculator.html</option>
-<option value="29_number_guessing_game.html">29_number_guessing_game.html</option>
-<option value="30_form_validation.html">30_form_validation.html</option>
-<option value="31_validate_name_email_phone_password.js">31_validate_name_email_phone_password.js</option>
-<option value="32_todo_list.html">32_todo_list.html</option>
-<option value="33_quiz_application.html">33_quiz_application.html</option>
-<option value="34_counter.html">34_counter.html</option>
-<option value="35_stopwatch.html">35_stopwatch.html</option>
-<option value="36_countdown_timer.html">36_countdown_timer.html</option>
-<option value="38_es6_features.js">38_es6_features.js</option>
-<option value="39_spread_rest.js">39_spread_rest.js</option>
-<option value="40_classes_objects.js">40_classes_objects.js</option>
-<option value="41_inheritance.js">41_inheritance.js</option>
-<option value="42_callbacks_promises_async.js">42_callbacks_promises_async.js</option>
-<option value="43_fetch_api.js">43_fetch_api.js</option>
-<option value="44_display_api_data.html">44_display_api_data.html</option>
-<option value="45_local_storage.js">45_local_storage.js</option>
-<option value="46_responsive_login_form.html">46_responsive_login_form.html</option>
-<option value="47_interactive_webpage.html">47_interactive_webpage.html</option>
-<option value="48_swap_two_numbers.js">48_swap_two_numbers.js</option>
-<option value="49_gcd.js">49_gcd.js</option>
-<option value="50_lcm.js">50_lcm.js</option>
-<option value="51_armstrong_number.js">51_armstrong_number.js</option>
-<option value="52_perfect_number.js">52_perfect_number.js</option>
-<option value="53_multiplication_table.js">53_multiplication_table.js</option>
-<option value="54_power.js">54_power.js</option>
-<option value="55_count_digits.js">55_count_digits.js</option>
-<option value="56_second_largest_array.js">56_second_largest_array.js</option>
-<option value="57_remove_duplicates.js">57_remove_duplicates.js</option>
-<option value="58_merge_arrays.js">58_merge_arrays.js</option>
-<option value="59_frequency_array.js">59_frequency_array.js</option>
-<option value="60_common_elements.js">60_common_elements.js</option>
-<option value="61_reverse_string.js">61_reverse_string.js</option>
-<option value="62_string_palindrome.js">62_string_palindrome.js</option>
-<option value="63_vowels_consonants.js">63_vowels_consonants.js</option>
-<option value="64_count_words.js">64_count_words.js</option>
-<option value="65_character_frequency.js">65_character_frequency.js</option>
-<option value="66_regular_expressions.js">66_regular_expressions.js</option>
-<option value="67_validate_email_regex.js">67_validate_email_regex.js</option>
-</select>
-<pre id="jsCode">Select a program to display its code.</pre>
-
-<h3>HTML-based JavaScript Programs — Open Directly</h3>
-<div class="list">
-<a href="4.javascript_lab_programs/22_change_text.html" target="_blank">22_change_text.html</a><a href="4.javascript_lab_programs/23_background_color.html" target="_blank">23_background_color.html</a><a href="4.javascript_lab_programs/24_button_click.html" target="_blank">24_button_click.html</a><a href="4.javascript_lab_programs/25_show_hide.html" target="_blank">25_show_hide.html</a><a href="4.javascript_lab_programs/26_change_image.html" target="_blank">26_change_image.html</a><a href="4.javascript_lab_programs/27_digital_clock.html" target="_blank">27_digital_clock.html</a><a href="4.javascript_lab_programs/28_simple_calculator.html" target="_blank">28_simple_calculator.html</a><a href="4.javascript_lab_programs/29_number_guessing_game.html" target="_blank">29_number_guessing_game.html</a><a href="4.javascript_lab_programs/30_form_validation.html" target="_blank">30_form_validation.html</a><a href="4.javascript_lab_programs/32_todo_list.html" target="_blank">32_todo_list.html</a><a href="4.javascript_lab_programs/33_quiz_application.html" target="_blank">33_quiz_application.html</a><a href="4.javascript_lab_programs/34_counter.html" target="_blank">34_counter.html</a><a href="4.javascript_lab_programs/35_stopwatch.html" target="_blank">35_stopwatch.html</a><a href="4.javascript_lab_programs/36_countdown_timer.html" target="_blank">36_countdown_timer.html</a><a href="4.javascript_lab_programs/44_display_api_data.html" target="_blank">44_display_api_data.html</a><a href="4.javascript_lab_programs/46_responsive_login_form.html" target="_blank">46_responsive_login_form.html</a><a href="4.javascript_lab_programs/47_interactive_webpage.html" target="_blank">47_interactive_webpage.html</a>
-</div>
-</div>
-
-<div class="viewer" id="dom">
-<h2>DOM Manipulation Programs — 15</h2>
-<select id="domSelect" onchange="showCode('dom')">
-<option value="">Select a DOM program</option>
-<option value="01_add_elements.html">01_add_elements.html</option>
-<option value="02_remove_elements.html">02_remove_elements.html</option>
-<option value="03_change_css_styles.html">03_change_css_styles.html</option>
-<option value="04_change_multiple_elements.html">04_change_multiple_elements.html</option>
-<option value="05_getElementById_getElementsByClassName.html">05_getElementById_getElementsByClassName.html</option>
-<option value="06_querySelector_querySelectorAll.html">06_querySelector_querySelectorAll.html</option>
-<option value="07_dynamic_css_classes.html">07_dynamic_css_classes.html</option>
-<option value="08_dynamic_table.html">08_dynamic_table.html</option>
-<option value="09_add_delete_table_rows.html">09_add_delete_table_rows.html</option>
-<option value="10_search_filter_table.html">10_search_filter_table.html</option>
-<option value="11_live_character_counter.html">11_live_character_counter.html</option>
-<option value="12_password_show_hide.html">12_password_show_hide.html</option>
-<option value="13_dynamic_dropdown.html">13_dynamic_dropdown.html</option>
-<option value="14_country_state_city_dropdown.html">14_country_state_city_dropdown.html</option>
-<option value="15_image_slideshow.html">15_image_slideshow.html</option>
-</select>
-<pre id="domCode">Select a program to display its code.</pre>
-
-<h3>Open DOM Programs Directly</h3>
-<div class="list">
-<a href="5.dom_manipulation_programs/01_add_elements.html" target="_blank">01_add_elements.html</a><a href="5.dom_manipulation_programs/02_remove_elements.html" target="_blank">02_remove_elements.html</a><a href="5.dom_manipulation_programs/03_change_css_styles.html" target="_blank">03_change_css_styles.html</a><a href="5.dom_manipulation_programs/04_change_multiple_elements.html" target="_blank">04_change_multiple_elements.html</a><a href="5.dom_manipulation_programs/05_getElementById_getElementsByClassName.html" target="_blank">05_getElementById_getElementsByClassName.html</a><a href="5.dom_manipulation_programs/06_querySelector_querySelectorAll.html" target="_blank">06_querySelector_querySelectorAll.html</a><a href="5.dom_manipulation_programs/07_dynamic_css_classes.html" target="_blank">07_dynamic_css_classes.html</a><a href="5.dom_manipulation_programs/08_dynamic_table.html" target="_blank">08_dynamic_table.html</a><a href="5.dom_manipulation_programs/09_add_delete_table_rows.html" target="_blank">09_add_delete_table_rows.html</a><a href="5.dom_manipulation_programs/10_search_filter_table.html" target="_blank">10_search_filter_table.html</a><a href="5.dom_manipulation_programs/11_live_character_counter.html" target="_blank">11_live_character_counter.html</a><a href="5.dom_manipulation_programs/12_password_show_hide.html" target="_blank">12_password_show_hide.html</a><a href="5.dom_manipulation_programs/13_dynamic_dropdown.html" target="_blank">13_dynamic_dropdown.html</a><a href="5.dom_manipulation_programs/14_country_state_city_dropdown.html" target="_blank">14_country_state_city_dropdown.html</a><a href="5.dom_manipulation_programs/15_image_slideshow.html" target="_blank">15_image_slideshow.html</a>
-</div>
-</div>
-
-</div>
-<footer>Web Technology Practical Programs</footer>
-
-<script>
-const jsSources = {"01_hello_world.js": "// 1. Display Hello World\nconsole.log(\"Hello World\");\n", "02_arithmetic_operations.js": "// 2. Arithmetic operations\nlet a = 20, b = 5;\nconsole.log(\"Addition:\", a + b);\nconsole.log(\"Subtraction:\", a - b);\nconsole.log(\"Multiplication:\", a * b);\nconsole.log(\"Division:\", a / b);\nconsole.log(\"Modulus:\", a % b);\n", "03_largest_of_three.js": "// 3. Largest of three numbers\nlet a = 10, b = 25, c = 15;\nlet largest = Math.max(a, b, c);\nconsole.log(\"Largest:\", largest);\n", "04_even_or_odd.js": "// 4. Check even or odd\nlet n = 17;\nconsole.log(n % 2 === 0 ? \"Even\" : \"Odd\");\n", "05_positive_negative_zero.js": "// 5. Check positive, negative, or zero\nlet n = -8;\nif (n > 0) console.log(\"Positive\");\nelse if (n < 0) console.log(\"Negative\");\nelse console.log(\"Zero\");\n", "06_factorial.js": "// 6. Factorial of a number\nlet n = 5, factorial = 1;\nfor (let i = 1; i <= n; i++) factorial *= i;\nconsole.log(\"Factorial:\", factorial);\n", "07_fibonacci.js": "// 7. Fibonacci series\nlet terms = 10, a = 0, b = 1;\nlet series = [];\nfor (let i = 0; i < terms; i++) {\n  series.push(a);\n  [a, b] = [b, a + b];\n}\nconsole.log(series.join(\" \"));\n", "08_prime_check.js": "// 8. Check whether a number is prime\nlet n = 29, isPrime = n > 1;\nfor (let i = 2; i <= Math.sqrt(n) && isPrime; i++) {\n  if (n % i === 0) isPrime = false;\n}\nconsole.log(isPrime ? \"Prime\" : \"Not Prime\");\n", "09_palindrome_number.js": "// 9. Check whether a number is a palindrome\nlet n = 1221;\nlet s = String(n);\nconsole.log(s === s.split(\"\").reverse().join(\"\") ? \"Palindrome\" : \"Not Palindrome\");\n", "10_reverse_number.js": "// 10. Reverse a number\nlet n = 12345;\nlet reversed = Number(String(Math.abs(n)).split(\"\").reverse().join(\"\"));\nconsole.log(\"Reversed:\", n < 0 ? -reversed : reversed);\n", "11_sum_of_digits.js": "// 11. Sum of digits\nlet n = 12345;\nlet sum = String(Math.abs(n)).split(\"\").reduce((total, d) => total + Number(d), 0);\nconsole.log(\"Sum of digits:\", sum);\n", "12_largest_smallest_array.js": "// 12. Largest and smallest element in an array\nlet arr = [12, 5, 30, 8, 17];\nconsole.log(\"Largest:\", Math.max(...arr));\nconsole.log(\"Smallest:\", Math.min(...arr));\n", "13_sort_array.js": "// 13. Sort an array\nlet arr = [40, 10, 30, 20, 50];\narr.sort((a, b) => a - b);\nconsole.log(\"Sorted:\", arr);\n", "14_sum_average_array.js": "// 14. Sum and average of array elements\nlet arr = [10, 20, 30, 40, 50];\nlet sum = arr.reduce((a, b) => a + b, 0);\nconsole.log(\"Sum:\", sum);\nconsole.log(\"Average:\", sum / arr.length);\n", "15_functions.js": "// 15. Demonstrate JavaScript functions\nfunction add(a, b) {\n  return a + b;\n}\nconsole.log(\"Result:\", add(10, 20));\n", "16_arrow_functions.js": "// 16. Arrow functions\nconst square = n => n * n;\nconst add = (a, b) => a + b;\nconsole.log(\"Square:\", square(6));\nconsole.log(\"Sum:\", add(4, 7));\n", "17_strings_methods.js": "// 17. Strings and string methods\nlet text = \"JavaScript Programming\";\nconsole.log(\"Length:\", text.length);\nconsole.log(\"Uppercase:\", text.toUpperCase());\nconsole.log(\"Lowercase:\", text.toLowerCase());\nconsole.log(\"Contains 'Script':\", text.includes(\"Script\"));\nconsole.log(\"Substring:\", text.slice(0, 10));\n", "18_arrays_methods.js": "// 18. Arrays and array methods\nlet arr = [1, 2, 3, 4, 5];\nconsole.log(\"Original:\", arr);\nconsole.log(\"map:\", arr.map(x => x * 2));\nconsole.log(\"filter:\", arr.filter(x => x % 2 === 0));\nconsole.log(\"reduce:\", arr.reduce((a, b) => a + b, 0));\narr.push(6);\nconsole.log(\"After push:\", arr);\n", "19_objects.js": "// 19. Objects in JavaScript\nconst student = {\n  name: \"Rahul\",\n  age: 20,\n  course: \"Computer Science\"\n};\nconsole.log(\"Name:\", student.name);\nconsole.log(\"Age:\", student.age);\nconsole.log(\"Course:\", student.course);\n", "20_date_math_objects.js": "// 20. Date and Math objects\nconst now = new Date();\nconsole.log(\"Current date:\", now.toLocaleString());\nconsole.log(\"Square root of 64:\", Math.sqrt(64));\nconsole.log(\"Random number:\", Math.random());\nconsole.log(\"PI:\", Math.PI);\n", "22_change_text.html": "<!DOCTYPE html>\n<html><body>\n<h2 id=\"text\">Original Text</h2>\n<button onclick=\"document.getElementById('text').textContent='Text changed using JavaScript!'\">Change Text</button>\n</body></html>\n", "23_background_color.html": "<!DOCTYPE html>\n<html><body>\n<button onclick=\"document.body.style.backgroundColor='lightblue'\">Change Background</button>\n</body></html>\n", "24_button_click.html": "<!DOCTYPE html>\n<html><body>\n<button id=\"btn\">Click Me</button>\n<p id=\"msg\"></p>\n<script>\ndocument.getElementById(\"btn\").addEventListener(\"click\", () => {\n  document.getElementById(\"msg\").textContent = \"Button clicked!\";\n});\n</script>\n</body></html>\n", "25_show_hide.html": "<!DOCTYPE html>\n<html><body>\n<p id=\"box\">This element can be hidden or shown.</p>\n<button onclick=\"toggle()\">Show / Hide</button>\n<script>\nfunction toggle() {\n  const box = document.getElementById(\"box\");\n  box.style.display = box.style.display === \"none\" ? \"block\" : \"none\";\n}\n</script>\n</body></html>\n", "26_change_image.html": "<!DOCTYPE html>\n<html><body>\n<img id=\"photo\" src=\"https://via.placeholder.com/200x120?text=Image+1\" alt=\"Demo\" width=\"200\">\n<br><button onclick=\"changeImage()\">Change Image</button>\n<script>\nfunction changeImage() {\n  document.getElementById(\"photo\").src =\n    \"https://via.placeholder.com/200x120?text=Image+2\";\n}\n</script>\n</body></html>\n", "27_digital_clock.html": "<!DOCTYPE html>\n<html><body>\n<h1 id=\"clock\"></h1>\n<script>\nfunction showTime() {\n  document.getElementById(\"clock\").textContent = new Date().toLocaleTimeString();\n}\nsetInterval(showTime, 1000);\nshowTime();\n</script>\n</body></html>\n", "28_simple_calculator.html": "<!DOCTYPE html>\n<html><body>\n<input id=\"a\" type=\"number\" placeholder=\"First number\">\n<select id=\"op\"><option>+</option><option>-</option><option>*</option><option>/</option></select>\n<input id=\"b\" type=\"number\" placeholder=\"Second number\">\n<button onclick=\"calculate()\">Calculate</button>\n<p id=\"result\"></p>\n<script>\nfunction calculate() {\n  const a = Number(document.getElementById(\"a\").value);\n  const b = Number(document.getElementById(\"b\").value);\n  const op = document.getElementById(\"op\").value;\n  let result;\n  if (op === \"+\") result = a + b;\n  else if (op === \"-\") result = a - b;\n  else if (op === \"*\") result = a * b;\n  else result = b === 0 ? \"Cannot divide by zero\" : a / b;\n  document.getElementById(\"result\").textContent = \"Result: \" + result;\n}\n</script>\n</body></html>\n", "29_number_guessing_game.html": "<!DOCTYPE html>\n<html><body>\n<h2>Number Guessing Game</h2>\n<input id=\"guess\" type=\"number\" min=\"1\" max=\"100\">\n<button onclick=\"checkGuess()\">Guess</button>\n<p id=\"message\"></p>\n<script>\nconst secret = Math.floor(Math.random() * 100) + 1;\nfunction checkGuess() {\n  const guess = Number(document.getElementById(\"guess\").value);\n  const msg = document.getElementById(\"message\");\n  if (guess === secret) msg.textContent = \"Correct!\";\n  else if (guess < secret) msg.textContent = \"Too low!\";\n  else msg.textContent = \"Too high!\";\n}\n</script>\n</body></html>\n", "30_form_validation.html": "<!DOCTYPE html>\n<html><body>\n<form id=\"form\">\n<input id=\"name\" placeholder=\"Name\" required><br>\n<input id=\"email\" type=\"email\" placeholder=\"Email\" required><br>\n<input id=\"phone\" placeholder=\"Phone\" required><br>\n<input id=\"password\" type=\"password\" placeholder=\"Password\" required><br>\n<button>Submit</button>\n</form>\n<p id=\"msg\"></p>\n<script>\ndocument.getElementById(\"form\").addEventListener(\"submit\", e => {\n  e.preventDefault();\n  const name = document.getElementById(\"name\").value.trim();\n  const email = document.getElementById(\"email\").value.trim();\n  const phone = document.getElementById(\"phone\").value.trim();\n  const password = document.getElementById(\"password\").value;\n  const emailOK = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n  const phoneOK = /^\\d{10}$/.test(phone);\n  if (!name || !emailOK || !phoneOK || password.length < 6)\n    document.getElementById(\"msg\").textContent = \"Please enter valid details.\";\n  else document.getElementById(\"msg\").textContent = \"Form submitted successfully!\";\n});\n</script>\n</body></html>\n", "31_validate_name_email_phone_password.js": "// 31. Validate name, email, phone, and password\nfunction validate(name, email, phone, password) {\n  const nameOK = /^[A-Za-z ]+$/.test(name);\n  const emailOK = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n  const phoneOK = /^\\d{10}$/.test(phone);\n  const passwordOK = password.length >= 8;\n  return { nameOK, emailOK, phoneOK, passwordOK };\n}\nconsole.log(validate(\"Rahul\", \"rahul@example.com\", \"9876543210\", \"password123\"));\n", "32_todo_list.html": "<!DOCTYPE html>\n<html><body>\n<h2>To-Do List</h2>\n<input id=\"task\" placeholder=\"Enter task\">\n<button onclick=\"addTask()\">Add</button>\n<ul id=\"list\"></ul>\n<script>\nfunction addTask() {\n  const input = document.getElementById(\"task\");\n  if (!input.value.trim()) return;\n  const li = document.createElement(\"li\");\n  li.textContent = input.value;\n  li.onclick = () => li.remove();\n  document.getElementById(\"list\").appendChild(li);\n  input.value = \"\";\n}\n</script>\n</body></html>\n", "33_quiz_application.html": "<!DOCTYPE html>\n<html><body>\n<h2 id=\"question\"></h2>\n<div id=\"options\"></div><p id=\"score\"></p>\n<script>\nconst quiz = [\n  {q:\"Which keyword declares a constant?\", options:[\"var\",\"let\",\"const\",\"define\"], answer:\"const\"},\n  {q:\"Which method converts JSON text to an object?\", options:[\"JSON.parse\",\"JSON.stringify\",\"JSON.object\",\"JSON.convert\"], answer:\"JSON.parse\"}\n];\nlet i = 0, score = 0;\nfunction showQuestion() {\n  const item = quiz[i];\n  document.getElementById(\"question\").textContent = item.q;\n  document.getElementById(\"options\").innerHTML = item.options.map(o =>\n    `<button onclick=\"answer('${o}')\">${o}</button> `).join(\"\");\n}\nfunction answer(choice) {\n  if (choice === quiz[i].answer) score++;\n  i++;\n  if (i < quiz.length) showQuestion();\n  else document.getElementById(\"score\").textContent = `Score: ${score}/${quiz.length}`;\n}\nshowQuestion();\n</script>\n</body></html>\n", "34_counter.html": "<!DOCTYPE html>\n<html><body>\n<h1 id=\"count\">0</h1>\n<button onclick=\"change(-1)\">-</button>\n<button onclick=\"change(1)\">+</button>\n<script>\nlet count = 0;\nfunction change(n) {\n  count += n;\n  document.getElementById(\"count\").textContent = count;\n}\n</script>\n</body></html>\n", "35_stopwatch.html": "<!DOCTYPE html>\n<html><body>\n<h1 id=\"display\">00:00:00</h1>\n<button onclick=\"start()\">Start</button>\n<button onclick=\"stop()\">Stop</button>\n<button onclick=\"reset()\">Reset</button>\n<script>\nlet seconds = 0, timer = null;\nfunction render() {\n  const h = String(Math.floor(seconds/3600)).padStart(2,\"0\");\n  const m = String(Math.floor(seconds%3600/60)).padStart(2,\"0\");\n  const s = String(seconds%60).padStart(2,\"0\");\n  document.getElementById(\"display\").textContent = `${h}:${m}:${s}`;\n}\nfunction start() { if (!timer) timer = setInterval(() => { seconds++; render(); }, 1000); }\nfunction stop() { clearInterval(timer); timer = null; }\nfunction reset() { stop(); seconds = 0; render(); }\n</script>\n</body></html>\n", "36_countdown_timer.html": "<!DOCTYPE html>\n<html><body>\n<input id=\"seconds\" type=\"number\" value=\"10\">\n<button onclick=\"start()\">Start</button>\n<h2 id=\"display\"></h2>\n<script>\nlet timer;\nfunction start() {\n  clearInterval(timer);\n  let n = Number(document.getElementById(\"seconds\").value);\n  document.getElementById(\"display\").textContent = n;\n  timer = setInterval(() => {\n    n--;\n    document.getElementById(\"display\").textContent = n;\n    if (n <= 0) { clearInterval(timer); alert(\"Time's up!\"); }\n  }, 1000);\n}\n</script>\n</body></html>\n", "38_es6_features.js": "// 38. ES6 let, const, template literals, destructuring\nlet name = \"Anu\";\nconst age = 21;\nconsole.log(`${name} is ${age} years old.`);\nconst student = { name: \"Anu\", age: 21 };\nconst { name: studentName, age: studentAge } = student;\nconsole.log(studentName, studentAge);\n", "39_spread_rest.js": "// 39. Spread and rest operators\nconst a = [1, 2, 3];\nconst b = [4, 5, ...a];\nconsole.log(\"Spread:\", b);\nfunction sum(...numbers) {\n  return numbers.reduce((a, b) => a + b, 0);\n}\nconsole.log(\"Rest:\", sum(1, 2, 3, 4));\n", "40_classes_objects.js": "// 40. Classes and objects\nclass Student {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  display() {\n    console.log(`Name: ${this.name}, Age: ${this.age}`);\n  }\n}\nconst s1 = new Student(\"Ravi\", 20);\ns1.display();\n", "41_inheritance.js": "// 41. Inheritance\nclass Animal {\n  speak() { console.log(\"Animal makes a sound\"); }\n}\nclass Dog extends Animal {\n  speak() { console.log(\"Dog barks\"); }\n}\nconst dog = new Dog();\ndog.speak();\n", "42_callbacks_promises_async.js": "// 42. Callbacks, Promises, and async/await\nfunction callbackExample(callback) {\n  setTimeout(() => callback(\"Callback completed\"), 500);\n}\ncallbackExample(message => console.log(message));\n\nconst promise = new Promise(resolve => {\n  setTimeout(() => resolve(\"Promise completed\"), 500);\n});\npromise.then(console.log);\n\nasync function asyncExample() {\n  const result = await promise;\n  console.log(\"Async/await:\", result);\n}\nasyncExample();\n", "43_fetch_api.js": "// 43. Fetch data from an API\nfetch(\"https://jsonplaceholder.typicode.com/posts/1\")\n  .then(response => response.json())\n  .then(data => console.log(data))\n  .catch(error => console.error(\"Error:\", error));\n", "44_display_api_data.html": "<!DOCTYPE html>\n<html><body>\n<h2>API Data</h2><pre id=\"data\">Loading...</pre>\n<script>\nfetch(\"https://jsonplaceholder.typicode.com/posts/1\")\n  .then(response => response.json())\n  .then(data => {\n    document.getElementById(\"data\").textContent =\n      JSON.stringify(data, null, 2);\n  })\n  .catch(error => document.getElementById(\"data\").textContent = error);\n</script>\n</body></html>\n", "45_local_storage.js": "// 45. Store and retrieve data using localStorage\nlocalStorage.setItem(\"username\", \"Rahul\");\nconst username = localStorage.getItem(\"username\");\nconsole.log(\"Stored username:\", username);\nlocalStorage.removeItem(\"username\");\n", "46_responsive_login_form.html": "<!DOCTYPE html>\n<html><head><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<style>\nbody{font-family:Arial;max-width:400px;margin:40px auto;padding:20px}\ninput,button{width:100%;padding:10px;margin:6px 0;box-sizing:border-box}\n</style></head><body>\n<h2>Login</h2>\n<form id=\"login\">\n<input id=\"email\" type=\"email\" placeholder=\"Email\" required>\n<input id=\"password\" type=\"password\" placeholder=\"Password\" required>\n<button>Login</button>\n</form><p id=\"msg\"></p>\n<script>\ndocument.getElementById(\"login\").addEventListener(\"submit\", e => {\n  e.preventDefault();\n  const email = document.getElementById(\"email\").value;\n  const password = document.getElementById(\"password\").value;\n  document.getElementById(\"msg\").textContent =\n    /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) && password.length >= 6\n    ? \"Login details are valid.\" : \"Invalid email or password.\";\n});\n</script></body></html>\n", "47_interactive_webpage.html": "<!DOCTYPE html>\n<html><head><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<style>\nbody{font-family:Arial;text-align:center;margin:0;padding:40px}\nbutton{padding:10px 16px;margin:5px}\n.card{max-width:500px;margin:auto;padding:30px;border:1px solid #ccc;border-radius:12px}\n</style></head><body>\n<div class=\"card\">\n<h1 id=\"title\">Interactive Webpage</h1>\n<p id=\"message\">Click a button to interact.</p>\n<button onclick=\"changeText()\">Change Text</button>\n<button onclick=\"randomColor()\">Random Color</button>\n<button onclick=\"toggle()\">Show/Hide</button>\n</div>\n<script>\nfunction changeText(){document.getElementById(\"message\").textContent=\"JavaScript changed this text!\";}\nfunction randomColor(){document.body.style.backgroundColor=`hsl(${Math.random()*360},70%,90%)`;}\nfunction toggle(){const p=document.getElementById(\"message\");p.style.display=p.style.display===\"none\"?\"block\":\"none\";}\n</script></body></html>\n", "48_swap_two_numbers.js": "// 48. Swap two numbers\nlet a = 10, b = 20;\n[a, b] = [b, a];\nconsole.log(\"a =\", a, \"b =\", b);\n", "49_gcd.js": "// 49. GCD of two numbers\nlet a = 48, b = 18;\nwhile (b !== 0) [a, b] = [b, a % b];\nconsole.log(\"GCD:\", Math.abs(a));\n", "50_lcm.js": "// 50. LCM of two numbers\nfunction gcd(a, b) {\n  while (b !== 0) [a, b] = [b, a % b];\n  return Math.abs(a);\n}\nlet a = 12, b = 18;\nconsole.log(\"LCM:\", Math.abs(a * b) / gcd(a, b));\n", "51_armstrong_number.js": "// 51. Armstrong number\nlet n = 153;\nlet digits = String(n).split(\"\");\nlet power = digits.length;\nlet sum = digits.reduce((s, d) => s + Number(d) ** power, 0);\nconsole.log(sum === n ? \"Armstrong number\" : \"Not an Armstrong number\");\n", "52_perfect_number.js": "// 52. Perfect number\nlet n = 28, sum = 0;\nfor (let i = 1; i <= n / 2; i++) if (n % i === 0) sum += i;\nconsole.log(sum === n ? \"Perfect number\" : \"Not a perfect number\");\n", "53_multiplication_table.js": "// 53. Multiplication table\nlet n = 7;\nfor (let i = 1; i <= 10; i++) console.log(`${n} x ${i} = ${n * i}`);\n", "54_power.js": "// 54. Calculate power\nlet base = 2, exponent = 5;\nconsole.log(\"Power:\", base ** exponent);\n", "55_count_digits.js": "// 55. Count digits\nlet n = 987654;\nconsole.log(\"Number of digits:\", String(Math.abs(n)).length);\n", "56_second_largest_array.js": "// 56. Second-largest element in an array\nlet arr = [10, 5, 20, 8, 20, 15];\nlet unique = [...new Set(arr)].sort((a, b) => b - a);\nconsole.log(\"Second largest:\", unique[1]);\n", "57_remove_duplicates.js": "// 57. Remove duplicate elements\nlet arr = [1, 2, 2, 3, 4, 4, 5];\nconsole.log([...new Set(arr)]);\n", "58_merge_arrays.js": "// 58. Merge two arrays\nlet a = [1, 2, 3], b = [4, 5, 6];\nconsole.log([...a, ...b]);\n", "59_frequency_array.js": "// 59. Frequency of each array element\nlet arr = [\"a\", \"b\", \"a\", \"c\", \"b\", \"a\"];\nconst frequency = {};\nfor (const item of arr) frequency[item] = (frequency[item] || 0) + 1;\nconsole.log(frequency);\n", "60_common_elements.js": "// 60. Common elements in two arrays\nlet a = [1, 2, 3, 4], b = [3, 4, 5, 6];\nconsole.log(a.filter(x => b.includes(x)));\n", "61_reverse_string.js": "// 61. Reverse a string\nlet str = \"JavaScript\";\nconsole.log(str.split(\"\").reverse().join(\"\"));\n", "62_string_palindrome.js": "// 62. Check whether a string is a palindrome\nlet str = \"madam\";\nlet reversed = str.split(\"\").reverse().join(\"\");\nconsole.log(str === reversed ? \"Palindrome\" : \"Not Palindrome\");\n", "63_vowels_consonants.js": "// 63. Count vowels and consonants\nlet str = \"JavaScript\";\nlet vowels = 0, consonants = 0;\nfor (const ch of str.toLowerCase()) {\n  if (/[a-z]/.test(ch)) /[aeiou]/.test(ch) ? vowels++ : consonants++;\n}\nconsole.log(\"Vowels:\", vowels);\nconsole.log(\"Consonants:\", consonants);\n", "64_count_words.js": "// 64. Count words in a string\nlet str = \"JavaScript is easy to learn\";\nlet words = str.trim() ? str.trim().split(/\\s+/) : [];\nconsole.log(\"Word count:\", words.length);\n", "65_character_frequency.js": "// 65. Frequency of characters in a string\nlet str = \"hello world\";\nconst frequency = {};\nfor (const ch of str.replace(/\\s/g, \"\")) frequency[ch] = (frequency[ch] || 0) + 1;\nconsole.log(frequency);\n", "66_regular_expressions.js": "// 66. Regular expressions\nlet text = \"The price is 500 rupees.\";\nconsole.log(\"Contains number:\", /\\d+/.test(text));\nconsole.log(\"All numbers:\", text.match(/\\d+/g));\nconsole.log(\"Replace spaces:\", text.replace(/\\s+/g, \"-\"));\n", "67_validate_email_regex.js": "// 67. Validate email using regular expression\nfunction isValidEmail(email) {\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n}\nconsole.log(isValidEmail(\"student@example.com\"));\nconsole.log(isValidEmail(\"invalid-email\"));\n"};
-const domSources = {"01_add_elements.html": "<!DOCTYPE html>\n<html><body>\n<h2>1. Add Elements Dynamically</h2>\n<button onclick=\"addItem()\">Add Item</button>\n<ul id=\"list\"></ul>\n<script>\nfunction addItem() {\n  const li = document.createElement(\"li\");\n  li.textContent = \"New element \" + (document.querySelectorAll(\"#list li\").length + 1);\n  document.getElementById(\"list\").appendChild(li);\n}\n</script>\n</body></html>\n", "02_remove_elements.html": "<!DOCTYPE html>\n<html><body>\n<h2>2. Remove Elements Dynamically</h2>\n<p id=\"item\">This paragraph can be removed.</p>\n<button onclick=\"removeItem()\">Remove</button>\n<script>\nfunction removeItem() {\n  const item = document.getElementById(\"item\");\n  if (item) item.remove();\n}\n</script>\n</body></html>\n", "03_change_css_styles.html": "<!DOCTYPE html>\n<html><body>\n<h2 id=\"title\">Change CSS with JavaScript</h2>\n<button onclick=\"changeStyle()\">Change Style</button>\n<script>\nfunction changeStyle() {\n  const title = document.getElementById(\"title\");\n  title.style.color = \"blue\";\n  title.style.backgroundColor = \"lightyellow\";\n  title.style.fontSize = \"32px\";\n  title.style.padding = \"10px\";\n}\n</script>\n</body></html>\n", "04_change_multiple_elements.html": "<!DOCTYPE html>\n<html><body>\n<h2>4. Change Multiple Elements</h2>\n<p class=\"text\">First paragraph</p>\n<p class=\"text\">Second paragraph</p>\n<p class=\"text\">Third paragraph</p>\n<button onclick=\"changeAll()\">Change All</button>\n<script>\nfunction changeAll() {\n  document.querySelectorAll(\".text\").forEach((element, index) => {\n    element.textContent = \"Updated paragraph \" + (index + 1);\n    element.style.color = \"green\";\n    element.style.fontWeight = \"bold\";\n  });\n}\n</script>\n</body></html>\n", "05_getElementById_getElementsByClassName.html": "<!DOCTYPE html>\n<html><body>\n<h2 id=\"heading\">getElementById()</h2>\n<p class=\"demo\">Paragraph 1</p>\n<p class=\"demo\">Paragraph 2</p>\n<button onclick=\"demonstrate()\">Run</button>\n<script>\nfunction demonstrate() {\n  const heading = document.getElementById(\"heading\");\n  heading.textContent = \"Found using getElementById()\";\n\n  const elements = document.getElementsByClassName(\"demo\");\n  for (let i = 0; i < elements.length; i++) {\n    elements[i].style.color = \"blue\";\n  }\n}\n</script>\n</body></html>\n", "06_querySelector_querySelectorAll.html": "<!DOCTYPE html>\n<html><body>\n<h2 class=\"title\">querySelector()</h2>\n<p class=\"item\">Item 1</p>\n<p class=\"item\">Item 2</p>\n<button onclick=\"demonstrate()\">Run</button>\n<script>\nfunction demonstrate() {\n  document.querySelector(\".title\").textContent = \"Selected with querySelector()\";\n  document.querySelectorAll(\".item\").forEach(item => {\n    item.style.backgroundColor = \"lightgreen\";\n  });\n}\n</script>\n</body></html>\n", "07_dynamic_css_classes.html": "<!DOCTYPE html>\n<html><head>\n<style>\n.highlight { background: yellow; color: red; padding: 10px; }\n.large { font-size: 28px; }\n</style>\n</head><body>\n<h2 id=\"text\">Dynamic CSS Classes</h2>\n<button onclick=\"addClass()\">Add Classes</button>\n<button onclick=\"removeClass()\">Remove Classes</button>\n<script>\nconst text = document.getElementById(\"text\");\nfunction addClass() {\n  text.classList.add(\"highlight\", \"large\");\n}\nfunction removeClass() {\n  text.classList.remove(\"highlight\", \"large\");\n}\n</script>\n</body></html>\n", "08_dynamic_table.html": "<!DOCTYPE html>\n<html><body>\n<h2>8. Dynamic Table</h2>\n<table id=\"table\" border=\"1\" cellpadding=\"8\">\n<thead><tr><th>Name</th><th>Age</th><th>Course</th></tr></thead>\n<tbody></tbody>\n</table>\n<script>\nconst students = [\n  [\"Anu\", 20, \"BCA\"],\n  [\"Ravi\", 21, \"BSc\"],\n  [\"Priya\", 19, \"BCA\"]\n];\nconst tbody = document.querySelector(\"#table tbody\");\nstudents.forEach(student => {\n  const row = tbody.insertRow();\n  student.forEach(value => row.insertCell().textContent = value);\n});\n</script>\n</body></html>\n", "09_add_delete_table_rows.html": "<!DOCTYPE html>\n<html><body>\n<h2>9. Add and Delete Table Rows</h2>\n<input id=\"name\" placeholder=\"Name\">\n<input id=\"age\" type=\"number\" placeholder=\"Age\">\n<button onclick=\"addRow()\">Add Row</button>\n<table border=\"1\" cellpadding=\"8\" id=\"table\">\n<thead><tr><th>Name</th><th>Age</th><th>Action</th></tr></thead>\n<tbody></tbody>\n</table>\n<script>\nfunction addRow() {\n  const name = document.getElementById(\"name\").value.trim();\n  const age = document.getElementById(\"age\").value;\n  if (!name || !age) return;\n  const row = document.querySelector(\"#table tbody\").insertRow();\n  row.insertCell().textContent = name;\n  row.insertCell().textContent = age;\n  const action = row.insertCell();\n  const button = document.createElement(\"button\");\n  button.textContent = \"Delete\";\n  button.onclick = () => row.remove();\n  action.appendChild(button);\n}\n</script>\n</body></html>\n", "10_search_filter_table.html": "<!DOCTYPE html>\n<html><body>\n<h2>10. Search / Filter Table Records</h2>\n<input id=\"search\" placeholder=\"Search...\" oninput=\"filterTable()\">\n<table border=\"1\" cellpadding=\"8\" id=\"table\">\n<tr><th>Name</th><th>Course</th></tr>\n<tr><td>Anu</td><td>BCA</td></tr>\n<tr><td>Ravi</td><td>BSc</td></tr>\n<tr><td>Priya</td><td>BCA</td></tr>\n<tr><td>Kiran</td><td>BCom</td></tr>\n</table>\n<script>\nfunction filterTable() {\n  const query = document.getElementById(\"search\").value.toLowerCase();\n  const rows = document.querySelectorAll(\"#table tr:not(:first-child)\");\n  rows.forEach(row => {\n    row.style.display = row.textContent.toLowerCase().includes(query) ? \"\" : \"none\";\n  });\n}\n</script>\n</body></html>\n", "11_live_character_counter.html": "<!DOCTYPE html>\n<html><body>\n<h2>11. Live Character Counter</h2>\n<textarea id=\"text\" maxlength=\"100\" rows=\"6\" cols=\"40\" placeholder=\"Type here...\"></textarea>\n<p>Characters: <span id=\"count\">0</span>/100</p>\n<script>\nconst text = document.getElementById(\"text\");\ntext.addEventListener(\"input\", () => {\n  document.getElementById(\"count\").textContent = text.value.length;\n});\n</script>\n</body></html>\n", "12_password_show_hide.html": "<!DOCTYPE html>\n<html><body>\n<h2>12. Password Show / Hide</h2>\n<input id=\"password\" type=\"password\" placeholder=\"Password\">\n<button onclick=\"togglePassword()\">Show</button>\n<script>\nfunction togglePassword() {\n  const input = document.getElementById(\"password\");\n  const button = event.target;\n  if (input.type === \"password\") {\n    input.type = \"text\";\n    button.textContent = \"Hide\";\n  } else {\n    input.type = \"password\";\n    button.textContent = \"Show\";\n  }\n}\n</script>\n</body></html>\n", "13_dynamic_dropdown.html": "<!DOCTYPE html>\n<html><body>\n<h2>13. Dynamic Dropdown</h2>\n<select id=\"course\"></select>\n<script>\nconst courses = [\"JavaScript\", \"Python\", \"Java\", \"C++\", \"HTML/CSS\"];\nconst dropdown = document.getElementById(\"course\");\ncourses.forEach(course => {\n  const option = document.createElement(\"option\");\n  option.value = course;\n  option.textContent = course;\n  dropdown.appendChild(option);\n});\n</script>\n</body></html>\n", "14_country_state_city_dropdown.html": "<!DOCTYPE html>\n<html><body>\n<h2>14. Country → State → City</h2>\n<select id=\"country\" onchange=\"loadStates()\"><option value=\"\">Select Country</option></select>\n<select id=\"state\" onchange=\"loadCities()\"><option value=\"\">Select State</option></select>\n<select id=\"city\"><option value=\"\">Select City</option></select>\n<script>\nconst data = {\n  India: {\n    \"Tamil Nadu\": [\"Chennai\", \"Coimbatore\", \"Madurai\"],\n    Karnataka: [\"Bengaluru\", \"Mysuru\", \"Mangaluru\"]\n  },\n  USA: {\n    California: [\"Los Angeles\", \"San Francisco\", \"San Diego\"],\n    Texas: [\"Houston\", \"Dallas\", \"Austin\"]\n  }\n};\n\nconst country = document.getElementById(\"country\");\nconst state = document.getElementById(\"state\");\nconst city = document.getElementById(\"city\");\n\nObject.keys(data).forEach(c => country.add(new Option(c, c)));\n\nfunction loadStates() {\n  state.innerHTML = '<option value=\"\">Select State</option>';\n  city.innerHTML = '<option value=\"\">Select City</option>';\n  if (!country.value) return;\n  Object.keys(data[country.value]).forEach(s => state.add(new Option(s, s)));\n}\n\nfunction loadCities() {\n  city.innerHTML = '<option value=\"\">Select City</option>';\n  if (!state.value) return;\n  data[country.value][state.value].forEach(c => city.add(new Option(c, c)));\n}\n</script>\n</body></html>\n", "15_image_slideshow.html": "<!DOCTYPE html>\n<html><head>\n<style>\n#slide { width: 500px; max-width: 100%; height: 300px; object-fit: cover; }\nbutton { margin: 8px; padding: 8px 15px; }\n</style>\n</head><body>\n<h2>15. Image Slideshow / Carousel</h2>\n<img id=\"slide\" src=\"https://picsum.photos/id/1015/500/300\" alt=\"Slideshow image\">\n<br>\n<button onclick=\"previous()\">Previous</button>\n<button onclick=\"next()\">Next</button>\n<script>\nconst images = [\n  \"https://picsum.photos/id/1015/500/300\",\n  \"https://picsum.photos/id/1016/500/300\",\n  \"https://picsum.photos/id/1025/500/300\",\n  \"https://picsum.photos/id/1035/500/300\"\n];\nlet index = 0;\n\nfunction showImage() {\n  document.getElementById(\"slide\").src = images[index];\n}\nfunction next() {\n  index = (index + 1) % images.length;\n  showImage();\n}\nfunction previous() {\n  index = (index - 1 + images.length) % images.length;\n  showImage();\n}\n\nsetInterval(next, 3000);\n</script>\n</body></html>\n"};
-function showCode(type) {
-  const select=document.getElementById(type==="js"?"jsSelect":"domSelect");
-  const output=document.getElementById(type==="js"?"jsCode":"domCode");
-  const sources=type==="js"?jsSources:domSources;
-  output.textContent=select.value?sources[select.value]:"Select a program to display its code.";
-}
-</script>
 </body>
 </html>
