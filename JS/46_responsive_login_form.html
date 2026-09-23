@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{font-family:Arial;max-width:400px;margin:40px auto;padding:20px}
+input,button{width:100%;padding:10px;margin:6px 0;box-sizing:border-box}
+</style></head><body>
+<h2>Login</h2>
+<form id="login">
+<input id="email" type="email" placeholder="Email" required>
+<input id="password" type="password" placeholder="Password" required>
+<button>Login</button>
+</form><p id="msg"></p>
+<script>
+document.getElementById("login").addEventListener("submit", e => {
+  e.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  document.getElementById("msg").textContent =
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && password.length >= 6
+    ? "Login details are valid." : "Invalid email or password.";
+});
+</script></body></html>

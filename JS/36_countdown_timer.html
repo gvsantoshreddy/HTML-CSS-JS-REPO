@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><body>
+<input id="seconds" type="number" value="10">
+<button onclick="start()">Start</button>
+<h2 id="display"></h2>
+<script>
+let timer;
+function start() {
+  clearInterval(timer);
+  let n = Number(document.getElementById("seconds").value);
+  document.getElementById("display").textContent = n;
+  timer = setInterval(() => {
+    n--;
+    document.getElementById("display").textContent = n;
+    if (n <= 0) { clearInterval(timer); alert("Time's up!"); }
+  }, 1000);
+}
+</script>
+</body></html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><body>
+<p id="box">This element can be hidden or shown.</p>
+<button onclick="toggle()">Show / Hide</button>
+<script>
+function toggle() {
+  const box = document.getElementById("box");
+  box.style.display = box.style.display === "none" ? "block" : "none";
+}
+</script>
+</body></html>

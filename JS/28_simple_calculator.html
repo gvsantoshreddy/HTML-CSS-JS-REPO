@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><body>
+<input id="a" type="number" placeholder="First number">
+<select id="op"><option>+</option><option>-</option><option>*</option><option>/</option></select>
+<input id="b" type="number" placeholder="Second number">
+<button onclick="calculate()">Calculate</button>
+<p id="result"></p>
+<script>
+function calculate() {
+  const a = Number(document.getElementById("a").value);
+  const b = Number(document.getElementById("b").value);
+  const op = document.getElementById("op").value;
+  let result;
+  if (op === "+") result = a + b;
+  else if (op === "-") result = a - b;
+  else if (op === "*") result = a * b;
+  else result = b === 0 ? "Cannot divide by zero" : a / b;
+  document.getElementById("result").textContent = "Result: " + result;
+}
+</script>
+</body></html>

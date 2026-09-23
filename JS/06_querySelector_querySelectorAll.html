@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><body>
+<h2 class="title">querySelector()</h2>
+<p class="item">Item 1</p>
+<p class="item">Item 2</p>
+<button onclick="demonstrate()">Run</button>
+<script>
+function demonstrate() {
+  document.querySelector(".title").textContent = "Selected with querySelector()";
+  document.querySelectorAll(".item").forEach(item => {
+    item.style.backgroundColor = "lightgreen";
+  });
+}
+</script>
+</body></html>

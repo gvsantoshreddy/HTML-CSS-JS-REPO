@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><body>
+<h2>10. Search / Filter Table Records</h2>
+<input id="search" placeholder="Search..." oninput="filterTable()">
+<table border="1" cellpadding="8" id="table">
+<tr><th>Name</th><th>Course</th></tr>
+<tr><td>Anu</td><td>BCA</td></tr>
+<tr><td>Ravi</td><td>BSc</td></tr>
+<tr><td>Priya</td><td>BCA</td></tr>
+<tr><td>Kiran</td><td>BCom</td></tr>
+</table>
+<script>
+function filterTable() {
+  const query = document.getElementById("search").value.toLowerCase();
+  const rows = document.querySelectorAll("#table tr:not(:first-child)");
+  rows.forEach(row => {
+    row.style.display = row.textContent.toLowerCase().includes(query) ? "" : "none";
+  });
+}
+</script>
+</body></html>

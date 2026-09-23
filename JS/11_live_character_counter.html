@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><body>
+<h2>11. Live Character Counter</h2>
+<textarea id="text" maxlength="100" rows="6" cols="40" placeholder="Type here..."></textarea>
+<p>Characters: <span id="count">0</span>/100</p>
+<script>
+const text = document.getElementById("text");
+text.addEventListener("input", () => {
+  document.getElementById("count").textContent = text.value.length;
+});
+</script>
+</body></html>

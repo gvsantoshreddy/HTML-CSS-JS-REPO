@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><body>
+<h2>9. Add and Delete Table Rows</h2>
+<input id="name" placeholder="Name">
+<input id="age" type="number" placeholder="Age">
+<button onclick="addRow()">Add Row</button>
+<table border="1" cellpadding="8" id="table">
+<thead><tr><th>Name</th><th>Age</th><th>Action</th></tr></thead>
+<tbody></tbody>
+</table>
+<script>
+function addRow() {
+  const name = document.getElementById("name").value.trim();
+  const age = document.getElementById("age").value;
+  if (!name || !age) return;
+  const row = document.querySelector("#table tbody").insertRow();
+  row.insertCell().textContent = name;
+  row.insertCell().textContent = age;
+  const action = row.insertCell();
+  const button = document.createElement("button");
+  button.textContent = "Delete";
+  button.onclick = () => row.remove();
+  action.appendChild(button);
+}
+</script>
+</body></html>

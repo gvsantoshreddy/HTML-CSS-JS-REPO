@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><body>
+<h2>8. Dynamic Table</h2>
+<table id="table" border="1" cellpadding="8">
+<thead><tr><th>Name</th><th>Age</th><th>Course</th></tr></thead>
+<tbody></tbody>
+</table>
+<script>
+const students = [
+  ["Anu", 20, "BCA"],
+  ["Ravi", 21, "BSc"],
+  ["Priya", 19, "BCA"]
+];
+const tbody = document.querySelector("#table tbody");
+students.forEach(student => {
+  const row = tbody.insertRow();
+  student.forEach(value => row.insertCell().textContent = value);
+});
+</script>
+</body></html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><body>
+<h2>1. Add Elements Dynamically</h2>
+<button onclick="addItem()">Add Item</button>
+<ul id="list"></ul>
+<script>
+function addItem() {
+  const li = document.createElement("li");
+  li.textContent = "New element " + (document.querySelectorAll("#list li").length + 1);
+  document.getElementById("list").appendChild(li);
+}
+</script>
+</body></html>

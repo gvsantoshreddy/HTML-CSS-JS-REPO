@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><body>
+<h2>13. Dynamic Dropdown</h2>
+<select id="course"></select>
+<script>
+const courses = ["JavaScript", "Python", "Java", "C++", "HTML/CSS"];
+const dropdown = document.getElementById("course");
+courses.forEach(course => {
+  const option = document.createElement("option");
+  option.value = course;
+  option.textContent = course;
+  dropdown.appendChild(option);
+});
+</script>
+</body></html>

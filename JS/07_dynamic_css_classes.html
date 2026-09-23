@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+.highlight { background: yellow; color: red; padding: 10px; }
+.large { font-size: 28px; }
+</style>
+</head><body>
+<h2 id="text">Dynamic CSS Classes</h2>
+<button onclick="addClass()">Add Classes</button>
+<button onclick="removeClass()">Remove Classes</button>
+<script>
+const text = document.getElementById("text");
+function addClass() {
+  text.classList.add("highlight", "large");
+}
+function removeClass() {
+  text.classList.remove("highlight", "large");
+}
+</script>
+</body></html>

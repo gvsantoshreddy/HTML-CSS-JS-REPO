@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><body>
+<h2>14. Country → State → City</h2>
+<select id="country" onchange="loadStates()"><option value="">Select Country</option></select>
+<select id="state" onchange="loadCities()"><option value="">Select State</option></select>
+<select id="city"><option value="">Select City</option></select>
+<script>
+const data = {
+  India: {
+    "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai"],
+    Karnataka: ["Bengaluru", "Mysuru", "Mangaluru"]
+  },
+  USA: {
+    California: ["Los Angeles", "San Francisco", "San Diego"],
+    Texas: ["Houston", "Dallas", "Austin"]
+  }
+};
+
+const country = document.getElementById("country");
+const state = document.getElementById("state");
+const city = document.getElementById("city");
+
+Object.keys(data).forEach(c => country.add(new Option(c, c)));
+
+function loadStates() {
+  state.innerHTML = '<option value="">Select State</option>';
+  city.innerHTML = '<option value="">Select City</option>';
+  if (!country.value) return;
+  Object.keys(data[country.value]).forEach(s => state.add(new Option(s, s)));
+}
+
+function loadCities() {
+  city.innerHTML = '<option value="">Select City</option>';
+  if (!state.value) return;
+  data[country.value][state.value].forEach(c => city.add(new Option(c, c)));
+}
+</script>
+</body></html>

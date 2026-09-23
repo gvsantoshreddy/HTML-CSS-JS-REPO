@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><body>
+<h2>2. Remove Elements Dynamically</h2>
+<p id="item">This paragraph can be removed.</p>
+<button onclick="removeItem()">Remove</button>
+<script>
+function removeItem() {
+  const item = document.getElementById("item");
+  if (item) item.remove();
+}
+</script>
+</body></html>

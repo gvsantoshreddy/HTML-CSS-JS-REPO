@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><body>
+<h1 id="clock"></h1>
+<script>
+function showTime() {
+  document.getElementById("clock").textContent = new Date().toLocaleTimeString();
+}
+setInterval(showTime, 1000);
+showTime();
+</script>
+</body></html>

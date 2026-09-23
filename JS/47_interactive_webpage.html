@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{font-family:Arial;text-align:center;margin:0;padding:40px}
+button{padding:10px 16px;margin:5px}
+.card{max-width:500px;margin:auto;padding:30px;border:1px solid #ccc;border-radius:12px}
+</style></head><body>
+<div class="card">
+<h1 id="title">Interactive Webpage</h1>
+<p id="message">Click a button to interact.</p>
+<button onclick="changeText()">Change Text</button>
+<button onclick="randomColor()">Random Color</button>
+<button onclick="toggle()">Show/Hide</button>
+</div>
+<script>
+function changeText(){document.getElementById("message").textContent="JavaScript changed this text!";}
+function randomColor(){document.body.style.backgroundColor=`hsl(${Math.random()*360},70%,90%)`;}
+function toggle(){const p=document.getElementById("message");p.style.display=p.style.display==="none"?"block":"none";}
+</script></body></html>
